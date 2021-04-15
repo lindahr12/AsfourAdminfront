@@ -18,7 +18,7 @@ export class FournisseursComponent  implements OnInit {
   paginator!: MatPaginator;
   @ViewChild(MatSort)
   sort!: MatSort;
-  displayedColumns: string[] = ['image','cin','nom','prenom','email','adresse','description','edit','delete'];
+  displayedColumns: string[] = ['image','cin','nom','prenom','email','adresse','description','approuver'];
   dataSource!: MatTableDataSource<Fournisseur>;
   fournisseurs:Fournisseur[]=[];
   catid:string='';
