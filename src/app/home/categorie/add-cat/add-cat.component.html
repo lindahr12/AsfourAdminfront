@@ -1,0 +1,46 @@
+<div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>New Categorie</mat-card-title>
+        </mat-card-header>
+        <form [formGroup]="form" class="example-form" (ngSubmit)="onSubmit()">
+            <mat-card-content>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="name" formControlName="nom" #action>
+                </mat-form-field>
+                <br/>
+                <br/>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Categorie</mat-label>
+                    <mat-select name="cat" formControlName="parent">
+                        <mat-option *ngFor="let cat of categories" [value]="cat._id" #message>
+                            {{cat.nom}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <br/>
+                <br/>
+                <mat-form-field style="width: 93%;">
+                    <mat-label>Propriety</mat-label>
+                    <mat-select name="cat" formControlName="propriete" multiple>
+                        <mat-option *ngFor="let cat of categories" [value]="cat._id" #message>
+                            {{cat.nom}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+                  <mat-icon>add</mat-icon>
+                </button>
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+            </mat-card-content>
+            <button mat-stroked-button (click)="openSnackBar(action.value,'saved') " color="warning" class="btn-block ">Save</button>
+        </form>
+    </mat-card>
+
+</div>

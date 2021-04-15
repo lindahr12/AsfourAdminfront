@@ -1,0 +1,101 @@
+.sidenav-container {
+    height: 100%;
+}
+
+.logo-name {
+    float: left;
+    width: 30%;
+    margin: 0% 3% 0% 2%;
+}
+
+.logo-name h1 {
+    font-size: 2.5em;
+    color: #FC8213;
+    margin: 0em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mat-icon {
+    margin: 10px;
+}
+
+.mat-sidenav {
+    background-color: #202121;
+    color: #aaabae;
+    width: 300px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .175);
+    -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .175);
+    -moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, .175);
+    border-radius: 0;
+}
+
+.mat-sidenav .mat-toolbar {
+    font-size: 1.7em;
+    background-color: #202121;
+    color: #FFFFFF;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .175);
+    -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .175);
+    -moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, .175);
+    border-radius: 0;
+}
+
+.mat-sidenav .mat-toolbar:hover {
+    color: #fdbb30;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.mat-sidenav .mat-nav-list a {
+    position: relative;
+    display: block;
+    padding: 13px 20px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    z-index: 2;
+    font-size: 1.12em;
+    text-align: center;
+    font-family: 'Carrois Gothic', sans-serif;
+}
+
+.mat-sidenav .mat-nav-list a:hover {
+    color: #fdbb30;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.mat-sidenav .mat-nav-list.active>a {
+    background-color: #2b303a;
+    color: #ffffff;
+}
+
+.sidenav .mat-toolbar {
+    background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#nav {
+    background: #fff;
+    padding: 1em 2em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.profile-img {
+    height: 50px;
+    width: 50px;
+    background: url('https://images.unsplash.com/photo-1504933350103-e840ede978d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
