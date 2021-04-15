@@ -5,8 +5,8 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import { ConfirmationDialogComponent } from '../categorie/confirmation-dialog/confirmation-dialog.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-fournisseurs',
@@ -18,7 +18,7 @@ export class FournisseursComponent  implements OnInit {
   paginator!: MatPaginator;
   @ViewChild(MatSort)
   sort!: MatSort;
-  displayedColumns: string[] = ['id','name','edit','delete'];
+  displayedColumns: string[] = ['image','cin','nom','prenom','email','adresse','description','edit','delete'];
   dataSource!: MatTableDataSource<Fournisseur>;
   fournisseurs:Fournisseur[]=[];
   catid:string='';

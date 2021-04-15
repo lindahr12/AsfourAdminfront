@@ -16,5 +16,6 @@ export interface Fournisseur{
     raisonSocial:string;
     description:string;
     matriculeFiscale:string;
+    image:Images
 
 }

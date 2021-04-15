@@ -29,6 +29,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CdkTableModule } from '@angular/cdk/table';
+import { MaterialModule } from './material-module';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { CdkTableModule } from '@angular/cdk/table';
     BrowserModule,
     AppRoutingModule,
     NgxDropzoneModule,
+    MaterialModule,
     FormsModule,
     MatSortModule,
     ReactiveFormsModule,

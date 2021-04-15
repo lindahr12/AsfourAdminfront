@@ -1,1 +1,39 @@
-<p>add-prop works!</p>
+<div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>New Propriety</mat-card-title>
+        </mat-card-header>
+        <form [formGroup]="form" class="example-form" (ngSubmit)="onSubmit()">
+            <mat-card-content>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="unite" formControlName="unite" #action>
+                </mat-form-field>
+                <br/>
+                <br/>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="libelle" formControlName="libelle" #action>
+                </mat-form-field>
+                <br/>
+                <br/>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Value propriete</mat-label>
+                    <mat-select name="cat" formControlName="parent">
+                        <mat-option *ngFor="let prop of proprietes" [value]="prop._id" #message>
+                            {{prop.value_prop}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+            </mat-card-content>
+            <button mat-stroked-button (click)="openSnackBar(action.value,'saved') " color="success" class="btn-block ">Save</button>
+        </form>
+    </mat-card>
+
+</div>
